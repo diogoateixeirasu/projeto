@@ -13,9 +13,4 @@ function toggleMode() {
     img.setAttribute("src", "./assets/Avatar.png")
   }
   //se nao tiver imagem, o que contem a imagem
-  if (html.classList.contains("light")) {
-    img.setAttribute("alt", "imagem de suski azul")
-  } else {
-    img.setAttribute("alt", "imagem de suski vermelha")
-  }
 }
