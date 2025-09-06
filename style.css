@@ -19,7 +19,7 @@
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
 }
@@ -74,7 +74,7 @@ body * {
   transform: translateY(-50%);
   top: 50%;
   left: 0;
-  animation: slide-out 0.3s;
+  animation: slide-out 0.4s;
 }
 
 #switch button:hover {
@@ -82,7 +82,7 @@ body * {
 }
 
 .light #switch button {
-  animation: slide-in 0.3s forwards;
+  animation: slide-in 0.4s forwards;
 }
 #switch span {
   display: block;
@@ -134,9 +134,11 @@ ul li a:hover {
   padding: 16px;
   transition: background 0.3s;
   border-radius: 50%;
+  transition: 0.8s;
 }
 #social-links a:hover {
-  background: var(--highlight-color);
+  background: var(--surface-color-hover);
+  transform: rotateY(360deg);
 }
 
 footer {
